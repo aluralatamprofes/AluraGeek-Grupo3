@@ -1,0 +1,296 @@
+/*--------------------Variables--------------------*/
+:root {
+    --bg-color: #ebebeb;
+    --input-placeholder: #d4d4d4;
+    --input-bg: #efefef;
+    --texto-destaque: #FFFF;
+    --azul-destaque: #2a7ae4;
+    --bg-contacto: #Eaf2fd;
+  }
+
+/*--------------------Normalize--------------------*/
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Releway', sans-serif;
+    background-color: var(--bg-color);
+}
+
+/*--------------------Patrón del proyecto--------------------*/
+textarea:focus, input:focus {
+    box-shadow:0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+input::placeholder, textarea::placeholder{
+    color: var(--input-placeholder);
+    padding: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--azul-destaque);
+    font-weight: 800;
+}
+
+button{
+    cursor: pointer;
+}
+
+/*--------------------Header General--------------------*/
+
+header{
+ background-color: var(--texto-destaque);
+ padding: 32.5px 155px;
+}
+
+nav{
+  
+  display: flex;
+  align-items: center;
+}
+
+/*--------------------Divs del Header--------------------*/
+
+.logo-busqueda {
+  
+  margin-left: 175px;
+  width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+    .logo{
+      
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img{
+      height: 30px;
+      width: 40px;
+    }
+
+    .logo p{
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .logo .logo-azul{
+      margin-left: 10px;
+      color: var(--azul-destaque);
+    }
+
+    .logo-busqueda input{
+     margin-left: 10%;
+     width: 395px;
+     height: 40px;
+     border-radius: 30px;
+     padding: 1% 3%;
+     border: none;
+     background-color: var(--input-bg);
+     background-image: url(assets/lupa.png);
+     background-repeat: no-repeat;
+     background-position: right;
+     background-position-x: 320px;
+    }
+
+    .login{
+      width: 600px;
+       display: flex;
+       justify-content: end;
+    }
+
+    .login button{
+     width: 180px;
+     height: 50px;
+     background: none;
+     border: 1px solid var(--azul-destaque);
+     text-transform: uppercase;
+    }
+
+    .login button:hover{
+       background-color: var(--azul-destaque);
+       color: var(--texto-destaque);
+    }
+
+/*--------------------Banner Promocional--------------------*/
+
+.destaque{
+   height: 352px;
+   background-image: url(assets/banner.png);
+   background-size: 100vw;
+   background-repeat: no-repeat;
+   padding: 32px;
+}
+
+    .banner{
+      
+      width: 750px;
+      height: 320px;
+      padding-left: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+    }
+
+    .banner h1{
+       color: var(--texto-destaque);
+       font-size: 52px;
+       font-weight: bold;
+    }
+
+    .banner h4{
+      color: var(--texto-destaque);
+      font-size: 22px;
+      font-weight: bold; 
+    }
+
+    .banner button{
+       background-color: var(--azul-destaque);
+       border: none;
+       color: var(--texto-destaque);
+       height: 51px;
+       width: 130px;
+    }
+
+/*--------------------Sección de productos--------------------*/
+
+.geral-prods{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+/*-----------------Divs en la Sección de Productos-------------*/
+
+    .prod-titulo{
+          
+         display: flex;
+         justify-content: space-between;
+    }
+
+    .prod-titulo .titulo{
+      font-size: 32px;
+      font-weight: bold;
+
+    }
+
+    .mostrar-mas{
+      font-weight: bold;
+      margin-top: 25px;
+      color: var(--azul-destaque);
+    }
+
+    .seccion-productos{
+      height: 310px;
+      width: 60vw;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+    }
+
+/*--------------------Form Contacto--------------------*/
+
+.contacto{
+    background-color: var(--bg-contato);
+    display: flex;
+    height: 365px;
+    justify-content: center;
+    padding: 64px 0;
+   
+}
+
+    .referencia{
+        display: flex;
+        width: 350px;
+        margin: 20px 0 0 0;
+    }
+
+    .referencia img{
+        width: 60px;
+        height: 40px;
+    }
+
+    .referencia p{
+        font-size: 26px;
+        font-weight: bolder;
+        color: var(--azul-destaque);
+        margin-top: 5px;
+        margin-left: 6px;
+    }
+
+    .links-utiles{
+        line-height: 40px;
+        width: 200px;
+        margin-right: 100px;
+    }
+
+    .links-utiles a{
+        color: black;
+        font-weight: normal;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 500px;
+    }
+
+    .form p{
+        font-weight: bolder;
+    }
+
+    .form input{
+        width: 475px;
+        position: relative;
+        height: 56px;
+        border: transparent;
+        margin-bottom: 20px;
+        box-sizing: content-box;
+        padding: 0.5% 2.7%;
+        color: var(--azul-destaque);
+    }
+
+    .form input:hover{
+        border-bottom: solid 2px var(--azul-destaque);
+        transition: linear 1s;
+    }
+
+    .label-nombre{
+        width: 100%;
+        position: absolute;
+        color: var(--input-placeholder);
+        top: 80px; left: 9px;
+        transition: 0.5s;                
+        }
+    
+        .input-nombre:focus + .label-nombre{
+        top: 64px;
+        font-size: 14px;
+        z-index: 2;
+        transition: 0.2s; 
+        color: var(--azul-destaque); 
+        }
+
+    .form textarea{
+        width: 100%;
+        font-family: 'Relaway', sans-serif;
+        border: transparent;
+        color: var(--azul-destaque);
+        margin-bottom: 20px;
+    }
+
+    .form button{
+        background-color: var(--azul-destaque);
+        border: none;
+        color: var(--texto-destaque);
+        height: 51px;
+        width: 180px;
+    }
