@@ -1,0 +1,232 @@
+/*---------------Variaveis---------------*/
+
+:root {
+  --bg-color: #ebebeb;
+  --input-placeholder: #d4d4d4;
+  --input-bg: #efefef;
+  --texto-destaque: #ffff;
+  --azul-destaque: #2a7ae4;
+  --bg-contato: #eaf2fd;
+  font-family: "Releway", sans-serif;
+}
+
+/*---------------Normaliza - Reset-CSS---------------*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Releway", sans-serif;
+  background-color: var(--bg-color);
+  scroll-behavior: smooth;
+}
+
+/*---------------Padrão de projeto---------------*/
+
+ textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--input-placeholder);
+  padding: 2%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--azul-destaque);
+  font-weight: 800;
+  font-family: "Releway", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/*---------------Header---------------*/
+
+header {
+  padding: 30px;
+  background-color: var(--texto-destaque);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.logo-busqueda {
+  width: 601px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 29.17px;
+  width: 40.02px;
+}
+
+.logo p {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.logo .logo-azul {
+  margin-left: 10px;
+  color: var(--azul-destaque);
+}
+
+.logo-busqueda input {
+  margin-left: 10%;
+  width: 393px;
+  height: 40px;
+  border-radius: 30px;
+  padding: 1% 3%;
+  border: none;
+  background-color: var(--input-bg);
+  background-image: url("../assets/lupa.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-x: 320px;
+}
+
+.login {
+  width: 600px;
+  display: flex;
+  justify-content: end;
+}
+
+.login button {
+  width: 182px;
+  height: 51px;
+  background: none;
+  border: solid 1px var(--azul-destaque);
+  color: var(--azul-destaque);
+  text-transform: uppercase;
+}
+
+.login button:hover {
+  background-color: var(--azul-destaque);
+  color: var(--texto-destaque);
+}
+
+/*---------------Formulario Footer---------------*/
+
+.contato {
+  background-color: var(--bg-contato);
+  display: flex;
+  height: 365px;
+  justify-content: center;
+  padding: 64px 0;
+}
+
+.referencia {
+  display: flex;
+  width: 350px;
+  margin: 20px 0 0 0;
+}
+
+.referencia img {
+  width: 60px;
+  height: 40px;
+}
+
+.img-crud {
+  width: 250px;
+  height: 200px;
+}
+
+.referencia p {
+  font-size: 26px;
+  font-weight: bolder;
+  color: var(--azul-destaque);
+  margin-top: 5px;
+  margin-left: 6px;
+}
+
+.links-uteis {
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  width: 200px;
+  margin-right: 100px;
+}
+
+.links-uteis a {
+  color: black;
+  font-weight: normal;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 500px;
+}
+
+.form p {
+  font-weight: bolder;
+}
+
+.form input {
+  width: 475px;
+  position: relative;
+  height: 56px;
+  border: transparent;
+  margin-bottom: 20px;
+  box-sizing: content-box;
+  padding: 0.5% 2.7%;
+  color: var(--azul-destaque);
+}
+
+.form input:hover {
+  border-bottom: solid 2px var(--azul-destaque);
+  transition: linear 1s;
+}
+
+.label-nome {
+  width: 100%;
+  position: absolute;
+  color: var(--input-placeholder);
+  top: 80px;
+  left: 9px;
+  transition: 0.5s;
+}
+
+.input-nome:focus + .label-nome {
+  top: 64px;
+  font-size: 14px;
+  z-index: 2;
+  transition: 0.2s;
+  color: var(--azul-destaque);
+}
+
+.form textarea {
+  width: 100%;
+  font-family: "Relaway", sans-serif;
+  border: transparent;
+  color: var(--azul-destaque);
+  margin-bottom: 20px;
+}
+
+.form button {
+  background-color: var(--azul-destaque);
+  border: none;
+  color: var(--texto-destaque);
+  height: 51px;
+  width: 180px;
+}
+
+

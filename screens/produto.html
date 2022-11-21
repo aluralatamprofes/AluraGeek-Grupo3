@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" type="text/css" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"/>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/products.css">
+    <title>Alura Geek</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-busca">
+          <div class="logo">
+            <img src="../assets/logo.png" alt="logo" />
+            <p class="logo-azul">Alura</p>
+            <p>Geek</p>
+          </div>
+          <input i type="text" placeholder="O que desejo encontrar?" />
+        </div>
+      </nav>
+    </header>
+
+    <section class="geral-products">
+      <div class="products_title">
+        <span>Todos os produtos</span> 
+        <a href="../screens/add-products.html"> <button class="product-button">Agregar Producto</button> </a>
+      </div>
+
+      <section class="products-section" data-allProducts>
+        
+      </section>
+    </section>
+    
+    <section class="contato">
+      <div class="referencia">
+        <img src="../assets/logo.png" alt="logo" />
+        <p>Alura</p>
+        <p>Geek</p>
+      </div>
+      <div class="links-uteis">
+        <a href="">Quem somos nós</a>
+        <a href="">Politica de Privacidade</a>
+        <a href="">Programa de fidelidade</a>
+        <a href="">Nossas Lojas</a>
+        <a href="">Quero ser franqueado</a>
+        <a href="">Anuncie aqui</a>
+      </div>
+
+      <div class="form">
+        <p>Fale conosco</p>
+        <div class="label-float">
+          <input
+            type="text"
+            name="Nome"
+            id="Nome"
+            class="input-nome"
+            placeholder=""
+          />
+          <label for="Nome" class="label-nome">Nome</label>
+        </div>
+        <textarea
+          name="mensagem"
+          id="msg"
+          cols="5"
+          rows="5"
+          placeholder="Escreva sua Mensagem"
+        ></textarea>
+        <button>Enviar Mensagem</button>
+      </div>
+    </section>
+
+  <script type="module" src="../controllers/lista-productos.js"></script>
+</body>
+</html>

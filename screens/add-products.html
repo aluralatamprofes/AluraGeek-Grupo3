@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" type='text/css' content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap">
+  <link rel="shortcut icon" type="imagex/png" href="../assets/Logo.svg" width="16" height="16">
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/add-products.css" />
+  <title>Alura Geek</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-busca">
+          <div class="logo">
+            <img src="../assets/logo.png" alt="logo" />
+            <p class="logo-azul">Alura</p>
+            <p>Geek</p>
+          </div>
+          <input i type="text" placeholder="O que desejo encontrar?" />
+        </div>
+        <div class="login">
+          <a href="login.html"><button type="submit">Login</button></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="product-add">
+        <div class="product-add_title">Adicionar novo produto</div>
+        <form class="form-cadastro" data-form>
+          <input
+            class="product-add_input__url"
+            type="text"
+            placeholder="URL do Produto"
+            required
+            data-url
+          />
+          <input
+            class="product-add_input__name"
+            type="text"
+            placeholder="Nome do produto"
+            required
+            data-nome
+          />
+          <input
+            class="product-add_input__price"
+            type="text"
+            placeholder="Preço do produto"
+            required
+            data-preco
+          />
+          <button type="submit" class="product-add_btn">
+            Adicionar produto
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+  <section class="contato">
+    <div class="referencia">
+      <img src="../assets/logo.png" alt="logo" />
+      <p>Alura</p>
+      <p>Geek</p>
+    </div>
+    <div class="links-uteis">
+      <a href="">Quem somos nós</a>
+      <a href="">Politica de Privacidade</a>
+      <a href="">Programa de fidelidade</a>
+      <a href="">Nossas Lojas</a>
+      <a href="">Quero ser franqueado</a>
+      <a href="">Anuncie aqui</a>
+    </div>
+
+    <div class="form">
+      <p>Fale conosco</p>
+      <div class="label-float">
+        <input
+          type="text"
+          name="Nome"
+          id="Nome"
+          class="input-nome"
+          placeholder=""
+        />
+        <label for="Nome" class="label-nome">Nome</label>
+      </div>
+      <textarea
+        name="mensagem"
+        id="msg"
+        cols="5"
+        rows="5"
+        placeholder="Escreva sua Mensagem"
+      ></textarea>
+      <button>Enviar Mensagem</button>
+    </div>
+  </section>
+  <script type="module" src="../controllers/crea-productos-controller.js"></script>
+</html>
