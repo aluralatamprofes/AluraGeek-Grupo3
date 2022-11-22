@@ -9,6 +9,13 @@
 
 ## ¿Qué encontrarás?
 
+#### En este repositorio actualizado encontrarás 3 ramas, cada una de las cuales contiene una versión actualizada del código. Siendo Live parte I, Live parte II y Full Crud. Al hacer clic en cada uno de ellos, obtendrá una versión actualizada del repositorio y podrá navegar entre los archivos.
+
+<p align="center" >
+     <img width="300" heigth="400" src="https://user-images.githubusercontent.com/101413385/203182662-94c38802-9506-46f1-8a7a-292ef40aae4c.png">
+</p>
+
+
 1) Carpeta assets con todas las imagenes utilizadas en nuestra página principal
 2) Archivo index.html donde encontrarás el código HTML referente a la página principal de nuestro AluraGeek
 3) Archivo login.html donde encontrarás el código HTML referente a la página de iniciar sesión 
@@ -16,6 +23,9 @@
 5) Archivo style.css donde están todas las clases CSS utiilizadas en la personalización de nuestra barra principal y nuestro banner
 6) Archivo productos.css donde están todas las clases CSS utiilizadas en la personalización de nuestras secciones de productos 
 7) Archivo style-login.css  donde están todas las clases CSS utiilizadas en la personalización de la sección de login.
+8) Views, donde se almacena el HTML de toda la aplicación.
+9) Controllers, donde se encuentra la lógica de manipulación de los protocolos CRUD.
+10) Servicios donde se encuentra la lógica de las peticiones CRUD como: Get, Post, Update y Delete.
 
 Es importante que recordemos que este código lo construimos juntos en nuestro live coding y que aún pueden faltar algunos estilos y elementos por aplicar.
 Como lo dijimos en la live también dejamos para ustedes una versión responsiva solo para mobile, ahora queda en sus manos terminar el desarrollo de nuestro e-commerce.
